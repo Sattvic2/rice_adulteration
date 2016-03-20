@@ -1,4 +1,4 @@
-RGB = imread('jump.jpg');
+RGB = imread('rice_pure.jpg');
 imshow(RGB)
 
 I = rgb2gray(RGB)
@@ -17,4 +17,8 @@ BW1 = edge(B,'sobel');
 figure, imshow(BW1)
 
 s = regionprops(BW2,'Area');
+disp(s)
 
+s2 = regionprops(BW2, 'BoundingBox' );
+
+figure, imhist(BW1)

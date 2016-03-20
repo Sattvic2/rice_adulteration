@@ -1,0 +1,1 @@
+wcompress('c','normal1.jpg','comp_normal1.wtc','stw');

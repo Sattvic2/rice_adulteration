@@ -1,4 +1,4 @@
-RGB1 = imread('brown_rice.jpg');
+RGB1 = imread('rice_chuta.jpg');
 I1 = rgb2gray(RGB1)
 
 BW1 = im2bw(I1, 0.4)
@@ -7,7 +7,7 @@ BW21 = edge(B1, 'canny');
 figure, imshow(BW21)
 
 
-RGB = imread('rice.jpg');
+RGB = imread('rice_adulterated.jpg');
 I = rgb2gray(RGB)
 BW = im2bw(I, 0.4)
 B = medfilt2(BW)
